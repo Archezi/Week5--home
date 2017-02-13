@@ -1,6 +1,81 @@
 <div>
-    <h1>{{home}}</h1>
+    <div>
+    	<h1>{{home}}</h1>
+    		<a href="https://github.com/Archezi" target="_blank"  >
+    	    	<img src="images/GitHub-Mark-64px.png" width="36px; " height="36px;" alt=""> GitHub
+    	    </a>
+    </div>
     
+    <h2>Hi Scott for sole purpose to <strong>ANNOY THE SHIT OF SCOTT</strong> </h2>
+    <ul>
+    	<li>
+    	<h3>When creating directive and trying to link controllers  this message appear in console log.</h3>
+    	<pre>
+Error: [$injector:unpr] http://errors.angularjs.org/1.5.6/$injector/unpr?p0=elementProvider%20%3C-%20element
+    at angular.js:38
+    at angular.js:4501
+    at Object.d [as get] (angular.js:4654)
+    at angular.js:4506
+    at d (angular.js:4654)
+    at e (angular.js:4678)
+    at Object.invoke (angular.js:4700)
+    at P.instance (angular.js:10177)
+    at n (angular.js:9096)
+    at angular.js:9496
+    	</pre>
+
+    	</li>
+
+    	<li>
+    		<h2>UI-SREF 2 different .state one Controller ? </h2>
+    		<p>
+    			Another Problem is when Im trying to create blog post section and create add new post from different UI-SREF (button add new post that link to another page) it don't add DOM element to "My Blog" page.
+    			When i <strong>console.log</strong> function is adding new object to array but it not recognise it in "My Blog" page. Don't know how to resolve it. 
+    			<pre>
+angular.module('app').controller('myBlogCtrl', function($scope){
+   
+  var posts = [
+  { title:"UX / UI Design" ,postImage: 'Artboard5@2x.png', postAuthor:'Lukasz Kaczmarek', postCaption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deleniti quae, neque libero voluptate maiores ullam unde voluptatem assumenda velit dolores impedit quis qui! Neque, cupiditate labore nulla? Atque, tenetur.'},
+  { title: "ACCESSIBILITY", postImage: 'Artboard6@2x.png', postAuthor:'Lukasz Kaczmarek', postCaption: "Without argument, one of the most important things to consider when creating a website is that it be accessible to everyone who wants to view it. Does your website play nice with screen readers?"},
+  { title: "ANALYTICS", postImage: 'Artboard7@2x.png', postAuthor:'Lukasz Kaczmarek', postCaption: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham"}
+  ];
+  $scope.addPost = function () {
+  var newPost = 
+    { 
+      title: $scope.post.title ,
+      postImage: $scope.post.postImage , 
+      postAuthor: $scope.post.postAuthor , 
+      postCaption: $scope.post.postCaption 
+    };
+    $scope.posts.push(newPost);
+    console.log(newPost);
+    console.log(posts);
+    return(newPost);
+    $scope.post = {};
+  }
+  $scope.posts = posts;
+});
+    			</pre>
+    		</p>
+
+    	</li>
+    	<li>
+    		<h2>After is post website on GitHub img from blog post are not working ? </h2>
+    		<p>
+    			probably minnor problem still don't know why it happening ?
+    		</p>
+    	</li>
+
+    	<li>
+    		<h3>
+    			One more request, is there any chance for clone of  some good angular application ?
+    		</h3>
+    		<p>
+    			Something more complex that i can dig and learn from good code and use good practice in learning proper web app structure common practice in writting code etc ... ? 
+    		</p>
+    	</li>
+    	<li><h2>THANK YOU VERRY MUCH </h2></li>
+    </ul>
     
 </div>
 
