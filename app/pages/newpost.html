@@ -1,0 +1,16 @@
+<label for="title">Title</label>
+<input ng-model="post.title" name="title" type="text" class="form-control">
+<label for="imgname">Tell me what is your image file name</label>
+<input ng-model="post.postImage" name="imgname" placeholder=" " type="text" class="form-control">
+<label for="author">Author</label>
+<input ng-model="post.postAuthor" name="author" type="text" class="form-control">
+
+
+<label for="message">Write you post here</label>
+<textarea class="form-control" name="message" rows="10" id="comment"></textarea>
+
+
+<button ng-click="addPost()" class="btn btn-success">
+    <span class="glyphicon glyphicon-plus"></span>Add you new post
+</button>
+

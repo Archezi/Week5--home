@@ -1,0 +1,21 @@
+<div   class="form-group col-sm-3"  >
+   <form name="contact" ng-submit="submit(contact)" action="">
+        <label for="name" >Name:</label>
+        <input ng-model="name"  type="name" class="form-control" placeholder="Enter your name">
+    
+        <label for="email" >Email:</label>
+        <input ng-model="email" type="email" class="form-control" placeholder="example@email.com">
+    
+        <label for="text">Message</label>
+        <textarea ng-model="message" class="form-control" name="text" id="message-fild" cols="30" rows="10"></textarea> 
+        
+        <input type="submit" id="submit" value="Submit" />
+   </form>
+    
+</div>
+<div class="form-group">
+    <label for="name" >Name: {{listOfContacts.name}}</label><br>
+    <label for="email" >Email: {{listOfContacts.email}}</label><br>
+    <label for="text" >Message: {{listOfContacts.message}}</label><br>
+    
+</div>

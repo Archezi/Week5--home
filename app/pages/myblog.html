@@ -1,0 +1,77 @@
+<div ng-model="blogPost" class="col-sm-10 col-md-10">
+    <div class="row">
+        <div class="col-sm-8 col-md-8">
+            
+        </div>
+        <div class="page-header col-sm-8 col-md-8 ">
+          <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Write New Post
+            </button>
+            <h1>My thoughts transferred to the screen  <small>wiriten by <strong>Lukasz Kaczmarek</strong></small></h1>
+        </div>
+       
+    </div>
+    <div>
+        
+
+
+        <button  class="btn btn-success">
+            <span class="glyphicon glyphicon-plus"></span>Add you new post
+        </button>
+    </div>  
+    <dvi>
+      
+       <div ng-repeat="post in posts" class="col-sm-6 col-md-4">
+        <div  class="row">
+            
+               
+                <div  class="thumbnail">
+                    <img class="img-responsive" ng-src="../images/blog/blog-1/{{post.postImage}}" alt="...">
+                    <div class="caption">
+                        <h2>{{post.title}}</h2>
+                        <span><small>{{post.postAuthor}}</small></span>
+                        <p>{{post.postCaption}}</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dvi>
+    
+
+    
+
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <label for="title">Title</label>
+        <input ng-model="post.title" name="title" type="text" class="form-control">
+        <label for="imgname">Tell me what is your image file name</label>
+        <input ng-model="post.postImage" name="imgname" placeholder=" " type="text" class="form-control">
+        <label for="author">Author</label>
+        <input ng-model="post.postAuthor" name="author" type="text" class="form-control">
+
+
+        <label for="message">Write you post here</label>
+        <textarea class="form-control" name="message" rows="10" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button"  class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
